@@ -40,18 +40,18 @@ public class PlaceholderFragment extends Fragment {
         for (int i = 0; i < 15; i++)
             data[i] = "Text Entry " + i;
 
-        ArrayAdapter<String> mForecastAdapter;
-        List<String> weekForecast = new ArrayList<String>(Arrays.asList(data));
+        ArrayAdapter<String> mDisplayAdapter;
+        List<String> StringList = new ArrayList<String>(Arrays.asList(data));
 
-        mForecastAdapter = new ArrayAdapter<String>(
+        mDisplayAdapter = new ArrayAdapter<String>(
                 getActivity(), // The current context (this activity)
                 R.layout.list_item_display, // The name of the layout ID.
                 R.id.list_item_textview, // The ID of the textview to populate.
-                weekForecast);
+                StringList);
 
         final ListView listview = (ListView) rootView.findViewById(R.id.listview_display);
 
-        listview.setAdapter(mForecastAdapter);
+        listview.setAdapter(mDisplayAdapter);
         listview.setOnScrollListener(new AbsListView.OnScrollListener(){
             public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
             }
