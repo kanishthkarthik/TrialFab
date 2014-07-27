@@ -14,4 +14,12 @@
         android:text="21°"
         android:id="@+id/listview_display" />
 
+    <com.example.kanishth.fabtest.Fab
+        android:id="@+id/fabbutton"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp" />
+
 </FrameLayout>
